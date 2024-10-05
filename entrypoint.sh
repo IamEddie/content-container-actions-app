@@ -4,3 +4,4 @@ echo "Hello $1"   # uses the who-to-greet input variable to print "Hello [who-to
 time=$(date)      # gets the current time and sets it as an output variable that actions running later in a job can use.
 #echo "::set-output name=time::$time" # sets the action's output parameter using the workflow syntax
 echo $GITHUB_OUTPUT
+echo $GITHUB_STATE
