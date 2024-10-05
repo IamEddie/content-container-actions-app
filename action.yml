@@ -8,8 +8,11 @@ inputs:
 outputs:
   time: # id of output
     description: 'The time we greeted you'
+  ci:
+    description: 'CI running moment'  
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
+    - ${{ inputs.this-ci-run }}
